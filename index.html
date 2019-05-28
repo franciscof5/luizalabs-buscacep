@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="luizaApp">
+<head>
+	<meta charset="utf-8">
+	<title>Luiza Labs - CEP</title>
+	<script src="angular.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="luiza.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+<body>
+
+<div class="container" ng-controller="buscaCep">
+	<div class="col-10 col-offset-1 p-4 m-1" style="background-color: #EEEEEE;">
+		<p><strong>Consultar</strong></p>
+		<p><label style="color: #999;" class="col-1 font-weight-bold">CEP</label><input type="text" name="" class="col-4" ng-model="cep" placeholder="Digite o CEP..."> &nbsp; <button class="btn btn-primary" ng-click="buscar()">Buscar</button></p>
+	</div>
+	<div class="col-10 col-offset-1 p-4 m-1" style="border: 3px solid #EEEEEE;">
+		<h2 ng-bind="endereco.logradouro">Rua Miguel Mentem</h2>
+		<p>
+			<span ng-bind="endereco.bairro">Vila Guilermina</span><br>
+			<span ng-bind="endereco.localidade">São Paulo - SP</span><br>
+			<span ng-bind="endereco.cep">02050-010</span><br>
+		</p>
+	</div>
+</div>
+
+</body>
+</html>
