@@ -6,6 +6,17 @@
 	<script src="angular.min.js"></script>
 	<script src="bootstrap.min.js"></script>
 	<script src="luiza.js"></script>
+	<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVDZXDbezjxOGalquoDPTH1DMBtLGRw0w">
+    </script>
+<style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        min-width: 100%;
+		min-height: 400px;
+      }
+    </style>
+
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 </head>
 <body>
@@ -21,6 +32,7 @@
 			<span ng-bind="endereco.bairro">Vila Guilermina</span><br>
 			<span ng-bind="endereco.localidade">São Paulo - SP</span><br>
 			<span ng-bind="endereco.cep">02050-010</span><br>
+			<div id="map"></div>
 		</p>
 	</div>
 </div>
