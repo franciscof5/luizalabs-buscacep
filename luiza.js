@@ -38,7 +38,6 @@ angular.module('luizaApp', []).controller('buscaCep', function($scope, $http) {
     }
 
      function carregarNoMapa(endereco) {
-      alert("car"+endereco);
         geocoder.geocode({ 'address': endereco + ', Brasil', 'region': 'BR' }, function (results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
                 if (results[0]) {
